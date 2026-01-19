@@ -16,7 +16,7 @@ export const LiveGrid: React.FC = () => {
         <div className="flex justify-between items-end mb-8 border-b border-neutral-900 pb-4">
             <h2 className="text-xl font-bold text-white uppercase tracking-widest">Trending Now</h2>
             <a href="#" className="text-neutral-500 hover:text-white text-xs font-bold uppercase tracking-widest transition-colors">
-                View All ->
+                View All &rarr;
             </a>
         </div>
 

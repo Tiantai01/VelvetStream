@@ -16,15 +16,15 @@
                 200: '#ffc8cd',
                 300: '#ffa1aa',
                 400: '#ff6b7b',
-                500: '#f83b51', // 更正红
-                600: '#e61e38', // 深红
-                700: '#c20f26', // 血红
+                500: '#f83b51',
+                600: '#e61e38',
+                700: '#c20f26',
                 800: '#a00f22',
-                900: '#851121', // 天鹅绒红
+                900: '#851121',
                 950: '#4a040e',
               },
               dark: {
-                bg: '#050505', // 纯黑略带灰
+                bg: '#050505',
                 surface: '#0f0f0f',
                 border: '#1f1f1f',
               }
@@ -35,6 +35,15 @@
             },
             backgroundImage: {
               'noise': "url('https://grainy-gradients.vercel.app/noise.svg')",
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
             }
           },
         },
@@ -47,7 +56,6 @@
         color: #e4e4e7;
         font-family: 'Inter', sans-serif;
       }
-      /* 添加噪点纹理，增加质感，去除塑料感 */
       .bg-noise {
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
       }
@@ -56,20 +64,22 @@
         letter-spacing: -0.02em;
       }
     </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-        "react/": "https://esm.sh/react@^19.2.3/",
-        "react": "https://esm.sh/react@^19.2.3"
-      }
-    }
-    </script>
-  <link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-dark-bg">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
