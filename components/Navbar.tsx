@@ -53,12 +53,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onJoin }) => {
             Log In
           </button>
           
-          <button 
-            onClick={onJoin}
-            className="px-5 py-2 rounded-full bg-white text-dark-bg font-semibold text-sm hover:bg-brand-50 transition-colors"
-          >
-            Join Free
-          </button>
+         <a 
+  href="https://baidu.com"
+  className="px-10 py-4 bg-white text-black hover:bg-neutral-200 text-sm font-bold tracking-widest uppercase transition-colors duration-300 inline-block text-center"
+>
+  Join Free
+</a>
         </div>
 
         {/* Mobile Toggle */}
