@@ -54,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onJoin }) => {
           </button>
           
          <a 
-  href="https://baidu.com"
+  href="https://t.acrsmartcam.com/339539/8873/0?aff_sub5=SF_006OG000004lmDN"
   className="px-10 py-4 bg-white text-black hover:bg-neutral-200 text-sm font-bold tracking-widest uppercase transition-colors duration-300 inline-block text-center"
 >
   Join Free
